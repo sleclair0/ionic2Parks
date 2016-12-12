@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { Park } from '../../app/interfaces/park'
 /*
   Generated class for the ParkDetails page.
 
@@ -12,7 +12,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'park-details.html'
 })
 export class ParkDetailsPage {
-  parkInfo: Object;
+  parkInfo: Park;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.parkInfo = navParams.data.parkData;
